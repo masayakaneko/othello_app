@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+.wrapper{
+  height: 1280px;
+  width:   720px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.header{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  background-color: green;
+  margin: 0 auto;
+  &-title{   
+    color: white;
+    font-weight: bold;
+    line-height: 100px;
+  }
+  .title-center{
+    font-size: 39px;
+  }
+}
+.title-btn{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+.title-btn:active{
+  width: 10px;
+  height: 32px;
+  margin: 0 11px;
+  border-radius: 0;
+  background:linear-gradient(270deg,white 0%, white 50%, black 50%, black 100%);
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.btn-black{
+  background-color:black;
+}
+
+.a-black{
+  color:black;
+}
+
+
+
+
+//-----------オセロ盤-------------
+
+.wrap{
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  .grid-container{
+    display: grid;
+    grid-gap: 2px;
+    grid-template-rows: repeat(8, 50px);
+    grid-template-columns: repeat(8, 50px);
+    background: linear-gradient(to bottom left,black 50%, rgb(15, 15, 15) 50%);
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+
+    .grid-item{
+      background-color: green;
+      font-size: 50px;
+      line-height: 54px;
+      cursor: pointer;
+    }
+  }
+}
+.white{
+  color: white;
+  pointer-events: none;
+}
+.black{
+  color: black;
+  pointer-events: none;
+}
+
+//-----------インターフェイス-------------
+
+.player-wrapper{
+  margin:0 auto;
+  width: 500px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  
+}
+#playerData{
+  height: 100px;
+  width: 200px;
+
+  border: 2px solid black;
+
+  #playerName{
+    font-size: 20px;
+  }
+}
+
+.pass{
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  &-btn{
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 104px;
+    color: white;
+    font-size: 20px;
+    background-color: green;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+
+
+
